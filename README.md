@@ -17,7 +17,8 @@ Pre-train
 ```bash
 HYDRA_FULL_ERROR=1 CUDA_VISIBLE_DEVICES=0 vemol-train --config-name mae_pretrain \
 name=pl1m_star_link_gt6_hidden512_seed1 checkpoint.save_step=True \
-checkpoint.save_epoch=False checkpoint.save_step_interval=2000 common.max_steps=20000 \ common.seed=1 dataset.mol_graph_collator_cfg.downsize=-1 dataset.batch_size=1024 \
+checkpoint.save_epoch=False checkpoint.save_step_interval=2000 common.max_steps=20000 \
+common.seed=1 dataset.mol_graph_collator_cfg.downsize=-1 dataset.batch_size=1024 \
 model=kfuse_graph_transformer model.d_model=512 model.num_layers=6 \
 scheduler.warmup_steps=2000 scheduler.lr=2e-4 dataset.use_cache_data=True \
 dataset.completion=True dataset.name=pl1m_aug \
