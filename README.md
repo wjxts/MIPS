@@ -26,7 +26,7 @@ dataset.mol_graph_collator_cfg.lmdb_path=data/pl1m_aug_pretrain_atom_graphs/lmdb
 dataset.kvec_names=[md,atom_pair_3d]
 ```
 
-Finetune:  
+Finetune 
 ```bash
 HYDRA_FULL_ERROR=1 CUDA_VISIBLE_DEVICES=1 python scripts/finetune.py \
 --seed=1 --lr=1e-4 --op=star_link --kvec_names=[md,atom_pair_3d] \
