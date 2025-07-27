@@ -8,8 +8,8 @@
 from setuptools import setup, find_packages, Extension
 import sys
 
-if sys.version_info < (3, 6):
-    sys.exit("Sorry, Python >= 3.6 is required for vemol.")
+if sys.version_info < (3, 8):
+    sys.exit("Sorry, Python >= 3.8 is required for vemol.")
     
 extensions = [
 ]
