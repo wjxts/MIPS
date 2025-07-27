@@ -2,7 +2,7 @@
 
 ![fail to find image](figures/pipeline.svg)
 
-MIPS is built upon **VeMoL (Versatile Molecular representation Learning)** (unpublished)       
+MIPS is built upon **VeMoL (Versatile Molecular representation Learning)** (unpublished python package)       
 
 Install VeMoL:     
 ```bash
