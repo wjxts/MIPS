@@ -11,7 +11,7 @@ pip install -e .
 
 Install PyTorch and DGL      
 
-Different polymer modeling approaches: star link, star keep and star remove are in *vemol/chem_utils/polymer_utils.py*       
+Different polymer modeling approaches: "star link" (ours), "star keep" and "star remove" are in *vemol/chem_utils/polymer_utils.py*       
 
 Pre-train
 ```bash
