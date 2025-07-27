@@ -1,0 +1,19 @@
+defaults:
+    # - _self_ # 去掉_self_, 后边的common就会生效
+    - dataset: mpp
+    - optimizer: adam
+    - checkpoint: base_checkpoint
+    - model: gnn
+    - criterion: binary_cross_entropy
+    - metric: binary_graph_cls
+    - scheduler: fix
+    - common: base_common
+    - _self_ # 放在这里，后边的common也会生效. self应该指的是除了default，其他部分的初始化!
+
+common:
+    validate: False
+    epochs: 5
+
+task: mpp_config
+name: mpp_test
+local_config: {}
